@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  #get 'contactus/index'
-  root 'home#index'
-  resources :contactus
-  
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+	root 'home#index'
+
+	post '/create_contact', to: 'home#create_contact'
+ # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

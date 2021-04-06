@@ -3,13 +3,13 @@
 
     <div class="row justify-content-center">
       <div class="col-xl-11 d-flex align-items-center">
-        <h1 class="logo mr-auto"><a href="index.html">Movers Packers</a></h1>
+        <h1 class="logo mr-auto"><%= link_to "Movers Packers",root_path %></h1>
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><%= link_to "Home",root_path %></li>
             <li><a href="#about">About Us</a></li>
-            <li class="drop-down"><a href="#portfolio">Services</a>
-              <ul>
+            <li class="drop-down"><a href="#services">Services</a>
+              <!--<ul>
                 <li><a href="#">Packing</a></li>
                 <li><a href="#">Loading</a></li>
                 <li><a href="#">Unloading</a></li>
@@ -18,9 +18,9 @@
                 <li><a href="#">Office Shifting</a></li>
                 <li><a href="#">Local Shifting</a></li>
                 <li><a href="#">Transport</a></li>
-              </ul>
+              </ul> -->
             </li>
-            <li><a href="#">Enquiry Now</a></li>
+            <li><a href="#portfolio">Enquiry Now</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav><!-- .nav-menu -->

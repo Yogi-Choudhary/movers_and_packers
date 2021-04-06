@@ -5,16 +5,34 @@
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
+import AOS from 'aos';
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import "jquery"
-import "popper.js"
-import "bootstrap"
-import "packs/main"
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-document.addEventListener("turbolinks:load", () => {
-  $('[data-toggle="tooltip"]').tooltip()
+import 'css/application';
+import $ from 'jquery';
+global.$ = jQuery;
+import "bootstrap";
+
+import "./vendor/jquery.min";
+import "./vendor/jquery.easing.min";
+import "./vendor/validate";
+import "./vendor/counterup.min";
+import "./vendor/isotope.pkgd.min";
+import "./vendor/venobox.min";
+import "./vendor/main";
+
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    startEvent: 'turbolinks:load' // if you are using turbolinks
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    startEvent: 'turbolinks:load' // if you are using turbolinks
+  });
 });
