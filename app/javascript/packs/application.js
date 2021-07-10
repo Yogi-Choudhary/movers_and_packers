@@ -17,6 +17,7 @@ import 'css/application';
 import $ from 'jquery';
 global.$ = jQuery;
 import "bootstrap";
+import '@fortawesome/fontawesome-free/css/all';
 
 import "./vendor/jquery.min";
 import "./vendor/jquery.easing.min";
